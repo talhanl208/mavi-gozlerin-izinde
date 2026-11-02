@@ -1,0 +1,165 @@
+<div id="app" lang="tr">
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Mavi Gözlerin İzinde, başa dön">
+      <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="17" fill="#E30A17"/><circle cx="14.2" cy="17" r="8" fill="#fff"/><circle cx="16.2" cy="17" r="6.4" fill="#E30A17"/><path d="M23.6 17l-3.9 1.27 2.41-3.32v4.1l-2.41-3.32z" fill="#fff"/></svg>
+      Mavi Gözlerin İzinde
+    </a>
+    <nav class="nav" aria-label="Bölümler">
+      <a href="#olustur">Yol haritamı oluştur</a>
+      <a href="#test">Uzmanlık testi</a>
+      <a href="#yol">Yol haritam</a>
+      <a href="#ustalar">Ustalar</a>
+      <a href="#sozler">Atatürk'ün sözleri</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-card">
+      <img class="hero-img" src="__IMG_goz__" alt="Yakın plan mavi gözler">
+      <div class="hero-in">
+        <div>
+          <span class="pill red" id="yil">Cumhuriyetin 103. yılında</span>
+          <h1>Mavi Gözlerin <span>İzinde</span></h1>
+          <p class="sub">Bölümünü ve sınıfını seç; hangi dönemde hangi beceriyi, hangi uygulamayı ve hangi sertifikayı alacağın tek bir yol haritasında çıksın.</p>
+          <div class="ctas">
+            <a class="btn red" href="#olustur">Yol haritamı oluştur</a>
+            <a class="btn white" href="#test">Hangi alana uygunum?</a>
+          </div>
+        </div>
+        <div class="hq" id="hq" aria-live="polite"><q id="hq-t">Bütün ümidim gençliktedir.</q><small id="hq-s">Mustafa Kemal Atatürk</small></div>
+      </div>
+    </div>
+    <div class="ribbon" aria-label="Atatürk'ün sözleri"><div class="ribbon-track" id="ribbon"></div></div>
+  </div>
+</section>
+
+<section class="sec" id="olustur">
+  <div class="wrap">
+    <div class="sh">
+      <span class="pill soft" style="align-self:flex-start">Adım adım</span>
+      <h2>Yol haritamı oluştur</h2>
+      <p>Seçimlerin anında aşağıdaki yol haritasına yansır. İkinci bir alanda da uzmanlaşmak istiyorsan, onun araçları ve sertifikaları da dönemlerine yerleştirilir.</p>
+    </div>
+    <div class="builder">
+      <div class="col">
+        <div class="step">
+          <label class="step-h" for="s-dept"><span class="num">1</span>Bölümün</label>
+          <select class="sel" id="s-dept"></select>
+        </div>
+        <div class="step">
+          <div class="step-h" id="lb-year"><span class="num">2</span>Kaçıncı sınıftasın?</div>
+          <div class="seg" id="seg-year" role="group" aria-labelledby="lb-year"></div>
+        </div>
+        <div class="step">
+          <div class="step-h" id="lb-hours"><span class="num">3</span>Haftada ders dışında kaç saat ayırabilirsin?</div>
+          <div class="seg" id="seg-hours" role="group" aria-labelledby="lb-hours"></div>
+        </div>
+        <div class="step">
+          <div class="lbl">Hazır örnekler</div>
+          <div class="examples" id="examples"></div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="step">
+          <div class="step-h" id="lb-sub"><span class="num">4</span>Uzmanlaşmak istediğin alan<em id="sub-n"></em></div>
+          <div class="subs" id="subs" role="group" aria-labelledby="lb-sub"></div>
+        </div>
+        <div class="step">
+          <label class="switch" for="t-second"><input type="checkbox" id="t-second"><span><span class="num" style="display:inline-grid;margin-right:10px;vertical-align:middle">5</span>Başka bir bölümün alanında da uzmanlaşmak istiyorum</span></label>
+          <div class="second" id="second" hidden>
+            <label class="lbl" for="s-dept2">İkinci bölüm</label>
+            <select class="sel" id="s-dept2"></select>
+            <div class="lbl" id="lb-sub2">O bölümde odaklanacağın alan</div>
+            <div class="subs" id="subs2" role="group" aria-labelledby="lb-sub2"></div>
+          </div>
+        </div>
+        <div class="go"><a class="btn red" href="#yol">Yol haritamı göster ↓</a><p>Seçimlerin bu tarayıcıda hatırlanır.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="test">
+  <div class="wrap">
+    <div class="sh">
+      <span class="pill soft" style="align-self:flex-start">Bölümüne özel</span>
+      <h2>Hangi alanda uzmanlaşmalıyım?</h2>
+      <p id="test-intro">Sorular seçtiğin bölüme göre değişir. Sonuçtaki ilk alanı tek dokunuşla yol haritana uygulayabilirsin.</p>
+    </div>
+    <div class="qz">
+      <figure class="qz-img" style="margin:0"><img src="__IMG_heykel__" alt="Kılıcını kaldırmış atlı Atatürk heykelinin silueti"><figcaption><q>Hayatta en hakiki mürşit ilimdir, fendir.</q><small>Mustafa Kemal Atatürk</small></figcaption></figure>
+      <div class="qcard" id="qcard"></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="yol">
+  <div class="wrap">
+    <div class="sh">
+      <span class="pill soft" style="align-self:flex-start">Dönem dönem</span>
+      <h2>Yol haritam</h2>
+      <p>Her dönemde öğreneceğin beceriler, uygulamalar, o seviyeye uygun sertifikalar, proje ve sahadan bir tavsiye. Tamamladıklarını işaretle; ilerlemen kaydedilir.</p>
+    </div>
+    <div class="rmh">
+      <div class="rm-card" id="rm-card"></div>
+      <figure class="qblock" style="margin:0"><img src="__IMG_portre__" alt="Atatürk portresi, siyah beyaz"><div><q id="rm-q"></q><small id="rm-qs"></small></div></figure>
+    </div>
+    <nav class="ovw" id="ovw" aria-label="Dönemler"></nav>
+    <div class="tl" id="tl"></div>
+    <div class="sec" style="padding-top:48px" id="sertifikalar">
+      <div class="sh"><span class="pill soft" style="align-self:flex-start">Özet</span><h2>Sertifika merdivenin</h2><p>Yol haritandaki bütün sertifikalar seviyesine göre. <b class="redtxt">TR</b> etiketliler Türkiye'de, <b>GLOBAL</b> etiketliler dünya çapında tanınır.</p></div>
+      <div class="ladder" id="ladder"></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="band f16"><img src="__IMG_f16__" alt="Siyah sarı boyalı bir savaş uçağı mavi gökyüzünde dikine tırmanıyor"><div class="in"><q>İstikbal göklerdedir.</q><small>Mustafa Kemal Atatürk</small></div></div>
+  </div>
+</section>
+
+<section class="sec" id="ustalar">
+  <div class="wrap">
+    <div class="sh">
+      <span class="pill soft" style="align-self:flex-start">Alanın ustaları</span>
+      <h2 id="ust-h">Ustalar, topluluklar ve kaynaklar</h2>
+      <p>Alanına yön vermiş isimler, katılabileceğin çalışma grupları ve masanda olması gereken kitaplar.</p>
+    </div>
+    <div class="ust" id="ust"></div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="band flag"><img src="__IMG_bayrak__" alt="Dalgalanan Türk bayrağı önünde Atatürk silueti"><div class="in"><q>Ey Türk gençliği! Birinci vazifen, Türk istiklâlini, Türk Cumhuriyetini, ilelebet muhafaza ve müdafaa etmektir.</q><small>Gençliğe Hitabe · 1927</small></div></div>
+  </div>
+</section>
+
+<section class="sec" id="sozler">
+  <div class="wrap">
+    <div class="sh">
+      <span class="pill soft" style="align-self:flex-start">Her zaman önde</span>
+      <h2>Atatürk'ün sözleri</h2>
+      <p>Bilime, çalışmaya ve gençliğe dair sözler. Yol haritanın her yılı bu sözlerden biriyle açılır.</p>
+    </div>
+    <div class="ata">
+      <div class="oval"><img src="__IMG_portre__" alt="Atatürk portresi"></div>
+      <div class="qgrid" id="qgrid"></div>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="poster"><img src="__IMG_poster__" alt="Atlı Atatürk heykeli ve Ne mutlu Türküm diyene yazısı"></div>
+    <div>
+      <q>Yurtta sulh, cihanda sulh.</q>
+      <p>Saha tavsiyeleri sektör deneyiminden derlenmiş temsili seslerdir. Sertifika, sınav ve yarışma koşulları değişebilir; başvurmadan önce resmî sayfalardan güncel şartları kontrol et. İşaretlemelerin ve seçimlerin yalnızca bu tarayıcıda saklanır.</p>
+    </div>
+  </div>
+</footer>
+</div>
